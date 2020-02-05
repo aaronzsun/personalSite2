@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import "compass/css3";
 
-@media only screen and (max-width: 600px) {
-    #profile {
-        width: 100px;
-        height: 100px;
-    }
-
-    #text
-}
 
 html, body {
     margin: 0;
@@ -19,9 +11,8 @@ html, body {
 #content-1, #content-2, #content-3, #content-4 {
     height: 100vh;
     min-height: 600px;
-    min-width: 1000px;
+    min-width: 1200px;
     text-align: center;
-    border: 1px solid black;
     overflow: hidden;
 }
 
@@ -33,6 +24,15 @@ html, body {
     background-color: #FFC965;
 }
 
+#content-3 {
+    background-color: #921717;
+    color: white;
+}
+
+#content-4 {
+    background-color: #BADDB9;
+}
+
 #header {
     margin-top: 40vh;
     font-size: 60px;
@@ -40,15 +40,19 @@ html, body {
     margin-bottom: 20px;
 }
 
-#text-content-2 {
-    margin-left: 15%;
-    margin-right: 15%;
+#text-content-1 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#text-content-2, #text-content-3, #text-content-4 {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: left;
     margin-top: 150px;
 }
 
 #text {
-    color: black;
     font-size: 36px;
 }
 
@@ -57,24 +61,6 @@ html, body {
     top: 20px;
     left: 80px;
 }
-
-#profile {
-    float: right;
-    height: 450px;
-    width: 450px;
-    border-radius: 50%;
-    border: 2px solid black;
-    display: block;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    transition: 0.4s;
-}
-
-#profile:hover {
-    transform: scale(1.1);
-}
-
 
 /** An Awesome Gooey Menu from Lucas Bebber! https://codepen.io/lbebber/pen/pvwZJp **/
 

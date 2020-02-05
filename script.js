@@ -29,3 +29,7 @@ function showContact(){
         behavior: 'smooth' 
       });
 }
+
+function showBlog(){
+    alert("Sorry, my blog isn't ready just yet. Check back in a couple weeks!")
+}
