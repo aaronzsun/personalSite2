@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import "compass/css3";
 
+@media only screen and (max-width: 600px) {
+    #profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    #text
+}
+
 html, body {
     margin: 0;
     padding: 0;
