@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width" />
+        <title> Aaron Sun </title>
+        <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+    </header>
+    <body>
+        <div id="navMenu">
+            <nav class="menu">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+                <label class="menu-open-button" for="menu-open">
+                  <span class="hamburger hamburger-1"></span>
+                  <span class="hamburger hamburger-2"></span>
+                  <span class="hamburger hamburger-3"></span>
+                </label>
+                
+                <a onclick=showAbout() class="menu-item">ABOUT</a>
+                <a onclick=showResume() class="menu-item">RESUME</a>
+                <a onclick=showContact() class="menu-item">CONTACT</a>
+                <a onclick=showBlog() class="menu-item">BLOG</a>
+            </nav>
+        </div>
+        <div id="content-1">
+            <h1 id="header"></h1>
+        </div>
+        <div id="content-2">
+            <div id="text-content-2">
+                <img src="profile.png" id="profile" alt="That's Me!">
+                <h1 style="font-size: 50px; font-weight: 800;"> Hey there, I'm Aaron Sun! </h1>
+                <p id="text">
+                    I was born in Pasadena, CA and raised in Las Vegas, NV (west coast, best coast). <br> <br>
+                    Currently, I'm in Cambridge, MA. <br> <br>
+                    I'm at Harvard concentrating in Applied Math & CS with a Secondary in Economics.
+                </p>
+            </div>
+        </div>
+        <div id="content-3">
+
+        </div>
+        <div id="content-4">
+
+        </div>
+        <script src="script.js"></script>
+        <script src="typeit.min.js"></script>
+    </body>
+</html>
