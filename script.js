@@ -3,33 +3,124 @@ window.onbeforeunload = function () {
   }
 
 new TypeIt("#header", {
-    speed: 60,
+    lifeLike: false,
+    speed: 0
 })
-  .type("Hi")
-  .pause(500)
-  .type(", I'm Aaron.")
-  .pause(1000)
-  .type(" I study Math, CS, & Econ @ Harvard.")
-  .go();
+	.type("H")
+	.pause(80)
+	.type("i")
+	.pause(80)
+	.type(",")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("I")
+	.pause(80)
+	.type("'")
+	.pause(80)
+	.type("m")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("A")
+	.pause(80)
+	.type("a")
+	.pause(80)
+	.type("r")
+	.pause(80)
+	.type("o")
+	.pause(80)
+	.type("n")
+	.pause(80)
+	.type(".")
+	.pause(80)
+	.type(" ")
+	.pause(700)
+	.type("I")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("s")
+	.pause(80)
+	.type("t")
+	.pause(80)
+	.type("u")
+	.pause(80)
+	.type("d")
+	.pause(80)
+	.type("y")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("M")
+	.pause(80)
+	.type("a")
+	.pause(80)
+	.type("t")
+	.pause(80)
+	.type("h")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("+")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("C")
+	.pause(80)
+	.type("S")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("+")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("E")
+	.pause(80)
+	.type("c")
+	.pause(80)
+	.type("o")
+	.pause(80)
+	.type("n")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("@")
+	.pause(80)
+	.type(" ")
+	.pause(80)
+	.type("H")
+	.pause(80)
+	.type("a")
+	.pause(80)
+	.type("r")
+	.pause(80)
+	.type("v")
+	.pause(80)
+	.type("a")
+	.pause(80)
+	.type("r")
+	.pause(80)
+	.type("d")
+	.pause(80)
+	.type(".")
+	.go();
 
 function showAbout(){
-    document.querySelector('#content-2').scrollIntoView({ 
-        behavior: 'smooth' 
+    document.querySelector('#content-2').scrollIntoView({
+        behavior: 'smooth'
       });
 }
 
 function showResume(){
-    document.querySelector('#content-3').scrollIntoView({ 
-        behavior: 'smooth' 
+    document.querySelector('#content-3').scrollIntoView({
+        behavior: 'smooth'
       });
 }
 
 function showContact(){
-    document.querySelector('#content-4').scrollIntoView({ 
-        behavior: 'smooth' 
+    document.querySelector('#content-4').scrollIntoView({
+        behavior: 'smooth'
       });
-}
-
-function showBlog(){
-    alert("Sorry, my blog isn't ready just yet. Check back in a couple weeks!")
 }

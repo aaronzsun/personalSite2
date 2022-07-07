@@ -6,64 +6,63 @@
         <title> Aaron Sun </title>
         <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
     </header>
-    <body>
-        <div id="navMenu">
-            <nav class="menu">
-                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-                <label class="menu-open-button" for="menu-open">
-                  <span class="hamburger hamburger-1"></span>
-                  <span class="hamburger hamburger-2"></span>
-                  <span class="hamburger hamburger-3"></span>
-                </label>
-                
-                <a onclick=showAbout() class="menu-item">ABOUT</a>
-                <a onclick=showResume() class="menu-item">WORK</a>
-                <a onclick=showContact() class="menu-item">CONTACT</a>
-                <a onclick=showBlog() class="menu-item">BLOG</a>
-            </nav>
-        </div>
+    <body onload="showButton()">
         <div id="content-1">
             <div id="text-content-1">
                 <h1 id="header"></h1>
+                <div id="enterBtnContainer">
+                    <button class="learn-more" id="enterBtn" onClick="document.getElementById('content-2').scrollIntoView();">Enter Site</button>
+                </div>
             </div>
         </div>
         <div id="content-2">
             <div id="text-content-2">
-                <h1 style="font-size: 60px; font-weight: 800;"> Hey there, I'm Aaron Sun! </h1>
-                <p id="text">
-                    I was born in Pasadena, CA and raised in Las Vegas, NV (west coast, best coast). <br> <br>
-                    Currently, I'm in Cambridge, MA. <br> <br>
-                    I'm a Harvard student majoring in Applied Math & CS, but I'm also pursuing a minor in 
-                    Economics. Outside of school, I do web development, software engineering, and
-                    stock market analysis. <br> <br>
+                <h1 id="content-header">ABOUT ME</h1>
+                <p class="text">
+                    I'm a rising <span class="strike">senior</span> junior at Harvard studying Applied Math, CS, and Econ with a secondary
+                    in Government (I took a gap year during the COVID-19 pandemic to
+                    intern at the National Institutes of Health). I'm originally from Las Vegas, but right now I'm in NYC as
+                    a SWE intern @ HubSpot! I'm interested in:
+                    <ul class="text">
+                        <li>mathematical modeling</li>
+                        <li>machine learning and AI</li>
+                        <li>web design</li>
+                        <li>democratizing access to technology</li>
+                        <li>soccer (aka football)</li>
+                        <li>freestyling</li>
+                      </ul>
                 </p>
             </div>
+            <div class="scroll-down" onClick="document.getElementById('content-3').scrollIntoView();"> </div>
         </div>
         <div id="content-3">
             <div id="text-content-3">
-                <h1 style="font-size: 60px; font-weight: 800;"> Currently, I'm a software engineer at Pakira. </h1>
-                <p id="text">
-                    I'm helping develop the full stack of their website, an online commodity trading platform
-                    for B2B transactions. <br> <br> <br>
-                    Some of past experience includes full stack engineering at HSA DEV's (that's Harvard's 
-                    undergraduate web dev group) Winter Bootcamp, statistical modeling at the NIH, and research at UNLV and
-                    Stony Brook University. <br> <br>
-                    You can also check out my <a target="_blank" href="https://github.com/aaronzsun">GitHub.</a>
+                <h1 id="content-header">MY WORK</h1>
+                <p class="text">
+                    I've worked at HubSpot, the National Institutes of Health, NASA's Jet Propulsion Laboratory,
+                    and Pakira (a Boston-based startup). Most of my work has focused on data analysis/ML, scripting, and software
+                    development. I'm also currently working on my startup ALGae, an application that uses machine learning algorithms
+                    to provide stock predictions to consumers for free. <br><br>
+
+                    At school, I've been part of Harvard Consulting on Business and the Environment, Harvard Computer Society,
+                    the Harvard MIT Math Tournament, and the Fusion Acapella Group. I've also won awards at Stanford's TreeHacks Hackathon
+                    for Best Use of Data Visualization and Most Sustainable Hack for my ML visualizer.
                 </p>
             </div>
+            <div class="scroll-down" onClick="document.getElementById('content-4').scrollIntoView();"> </div>
         </div>
         <div id="content-4">
             <div id="text-content-4">
-                <h1 style="font-size: 60px; font-weight: 800;"> Slide into my DMs! (please) </h1>
-                <p id="text">
-                    Opportunity? Idea? Question? I'd love to hear it.  <br> <br>
-                    Shoot me an email or message me through any of my social media platforms,
-                    and I promise I'll get back ASAP. <br> <br>
+                <h1 id="content-header">GET IN TOUCH</h1>
+                <p class="text">
+                    Opportunity? Idea? Question? Just wanna chat?  <br> <br>
+                    Shoot me an email or message me through any of my social media platforms
+                    and I'll get back ASAP. <br> <br>
                     <a target="_blank" href="https://www.linkedin.com/in/aaronzsun/">LinkedIn</a> <br>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100005968875484">Facebook</a> <br>
                     <a target="_blank" href="mailto:aaronsun@college.harvard.edu">Email</a>
                 </p>
             </div>
+            <div class="scroll-up" onClick="document.getElementById('content-1').scrollIntoView();"></div>
         </div>
         <script src="script.js"></script>
         <script src="typeit.min.js"></script>
