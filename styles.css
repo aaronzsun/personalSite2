@@ -172,7 +172,7 @@ button.learn-more:active::before {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #header {
-    font-size: 56px;
+    font-size: 45px;
     color: black;
 		margin-top: 20vh;
 	}
@@ -365,11 +365,4 @@ button.learn-more:active::before {
 		-webkit-transform: translate(0, -10px) rotate(45deg);
 		opacity: 0;
 	}
-}
-
-/* imgs */
-
-#img1 {
-	display: inline;
-	width: 70px;
 }
